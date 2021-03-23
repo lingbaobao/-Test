@@ -1,0 +1,1055 @@
+// 布局的公共样式 
+.wrapper{
+    width: auto!important;
+    margin: 0;
+    padding: 40px;
+    -ms-transition: all .3s!important;
+    -webkit-transition: all .3s!important;
+    transition: all .3s!important; 
+}
+.content-wrap {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgb(245 245 245), 0 0 6px rgb(206 206 206);
+}
+.content-wrap-mini{
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px whitesmoke, 0 0 6px #cecece;
+    width: 1000px;
+    margin: 0 auto;
+}
+ .mainCl{
+    color:#409eff;
+}
+.mainClPointer{
+    color:#409eff;
+   cursor: pointer;
+}
+.tableHeight{
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    .el-table{
+        margin-top: 0;
+    }
+}
+// 面包屑导航
+.el-breadcrumb{
+    text-align: left;
+    >span{
+        display: flex;
+        width: 100%;
+        padding: 30px 0 0 40px;
+        // .el-breadcrumb__item:nth-child(2){
+        //     display: none;
+        // }
+    }
+}
+// 分页
+.el-pagination-wrap{
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+// 表格+搜索的公共布局
+.screen-wrap{
+    .selected{
+        background: rgba(237,196,8,.1);
+        >em{
+            padding:5px 0
+        }
+        li{
+            border: 1px solid #409EFF;
+            span{
+                color: #409EFF;
+            }
+            em{
+                font-size: 16px;
+                padding-left: 10px;
+                padding-right: 0;
+                color: #409EFF;
+            }
+        }
+    }
+    .item{
+        border-bottom: 1px dashed #eee;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        em{
+            width: 100px;
+            text-align: right;
+            padding-right: 20px;
+            color: #666;
+        }
+        ul{
+            li{
+                cursor: pointer;
+                padding: 2px 5px;
+                margin-right: 8px;
+                border-radius: 3px;
+                display: inline-block;
+                &:hover{
+                   color: #409EFF; 
+                }  
+            }
+            li.cur{
+                background-color: #409EFF; 
+                color: #fff;
+            }
+        }
+        .shrinkHeight{
+            height: auto !important;
+        }
+        .postListShrink{
+            position: relative;height: 24px;width: 1000px;overflow:hidden;
+            ul{
+                width: 800px;
+            }
+            em{
+                color: #409EFF;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        .itemInput{
+            display: flex;
+            .el-input{
+                margin-right: 10px;
+            }
+        } 
+        .el-input__inner{
+            height: 30px;
+            line-height: 30px;
+        }
+        .el-input__icon{
+            line-height: 30px;
+        }
+        .el-select{
+            margin-right: 10px;
+        }
+    }
+    .item-btn{
+        padding: 20px 0 0 100px;
+    }
+}
+
+/*搜索表单输入框样式*/
+.searchType1{
+	.el-form-item{
+		height: 30px;
+		line-height: 30px;
+		width: 310px;
+		.el-form-item__label {
+			line-height: 30px;
+			width:100px;
+			text-align: right;
+		}
+		.el-form-item__content {
+			line-height: 30px;
+			width: 200px;
+		}
+		.el-input__inner {
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #c3cbd1;
+			border-radius: 4px;
+		}
+		.el-input__icon {
+			line-height: 30px;
+		}
+	}
+	/*width=100%*/
+	.widthAll{
+		.el-form-item{
+			height: 100px;
+			width: 100%;
+			margin-bottom: 22px;
+			.el-form-item__content {
+				line-height: 30px;
+				width: 500px;
+			}
+			.el-textarea__inner {
+				height: 100px;
+				line-height: 18px;
+				border: 1px solid #c3cbd1;
+				border-radius: 4px;
+			}
+		}
+	} 
+}
+	
+	
+.table-wrap{
+    margin-top: 40px; 
+	padding-top: 20px;
+    border-top: 1px #eee solid;
+    .el-table{
+        border: 1px solid #EBEEF5;
+    }
+}
+/*操作按钮*/
+.operate-btn{
+    margin-bottom: 20px;
+    button{
+        margin: 0 5px 0 0;
+        margin-left: 0 !important;
+    }
+}
+.el-divider--vertical{
+    margin:0 8px 0 3px;
+}
+.el-table {
+    margin-top: 20px;
+}
+.el-table th{
+    background-color: #f5f5f5;
+}
+.el-table td, .el-table th{
+    padding: 8px 0;
+}
+// 详情公用
+.detail-ul-wrap{
+    .title{
+        font-size: 16px;
+        color: #409EFF;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+    }
+    ul{
+        position: relative;
+        li{
+            display: flex;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            >span{
+                width: calc(100% - 100px);
+                color: #666;
+                word-break: break-all;
+            }
+        }
+        em{
+            width: 100px;
+        } 
+    }
+    .ulHeight{
+        height: 100px;
+        overflow: hidden;
+    }
+    .list-p{
+        color: #666;
+        margin-right: 20px;
+        display: inline-block;
+    }
+    .shrink{
+        cursor: pointer;
+        color: #409eff;
+        position: absolute;
+        right: 100px;
+        z-index: 2;
+    }
+}
+// 流程公用 横向
+.process-transverse-wrap{
+    margin-bottom: 30px;
+    .title{
+        font-size: 16px;
+        color: #409EFF;
+        margin-bottom: 20px;
+    }
+    .el-steps{
+        border: 1px solid #eee;
+        background: rgb(245 245 245 / .5);
+        padding: 20px 20px 15px;
+        .el-step {
+            flex-basis: 180px !important;
+            max-width: 180px;
+        }
+        .el-step__title{
+            font-size: 14px;
+        }
+    }
+}
+
+// 表单
+.form-wrap1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .el-form-item{
+		height: 30px;
+		line-height: 30px;
+		.el-form-item__label {
+			line-height: 30px;
+			width:108px;
+			text-align: right;
+		}
+		.el-form-item__content {
+			line-height: 30px;
+            width: 200px;
+            display: inline-block;
+        }
+        .el-date-editor.el-input{
+            width: 200px;
+        }
+		.el-input__inner {
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #c3cbd1;
+			border-radius: 4px;
+		}
+		.el-input__icon {
+			line-height: 30px;
+        }
+    }
+    .some{
+        .el-input{
+            width: 130px;
+        }
+        .el-checkbox{
+            float: right;
+        }
+    }
+    .mainCl{
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .textareaCon{
+        display: block;
+        height: auto;
+        .el-textarea{
+            height: 180px;
+            textarea{
+                height: 100%;
+            }
+        }
+        .el-form-item__content{
+            width: 320px;
+        }
+    }
+    .content100{
+        height: auto;
+        .el-form-item__content{
+            width: calc(100% - 108px);
+            .content-item{
+                display: flex;
+                width: 580px;
+                margin-bottom: 10px;
+                div{&:nth-child(2){
+                    margin: 0 10px;
+                }}
+            }
+            .el-input{
+                width: 160px;
+            }
+        }
+    } 
+    .submit-btn{
+        margin-left: 108px;
+    }
+    .right-btn{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .checkbox-wrap{
+        height: auto;
+        .el-form-item__content{
+            width: 500px;
+        }
+    }
+    .el-card{
+        z-index: 1111;
+        position: relative;
+        .item{
+            cursor: pointer;
+            &:hover{
+                color: #409EFF;
+            }
+        }
+    }
+    .interviewerChoose-wrap{
+        height: auto;
+        position: relative;
+        .ic-list{
+                border: 1px solid #c3cbd1;
+                border-radius: 3px;
+            ul{
+                display: inline-block;
+                li{
+                    cursor: pointer;
+                    float: left;
+                    display: flex;
+                    margin-right: 10px;
+					background: #eee;
+					border-radius: 3px;
+					padding: 0 5px;
+					font-size: 12px;
+					margin-top: 6px;
+                    &:hover{
+                        color: #409EFF; 
+                    }
+                }
+            }
+            .el-input{
+                width: 100px;
+                vertical-align: top;
+                input{
+                    border:none;
+                    padding: 0 5px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .el-icon-circle-plus-outline{
+            position: absolute;
+            left: 330px;
+            top: 10px;
+            font-size: 18px;
+            color: #666;
+            cursor: pointer;
+        }
+        .delApprover{
+            position: absolute;
+            left: 360px;
+            top: 5px;
+            font-size: 12px;
+            cursor: pointer;
+            width: 30px;
+            color: #409eff;
+        }
+        .el-form-item__content{
+            width: 320px;
+            height: auto;
+        }
+    }
+}
+.form-wrap2{
+    .el-form-item{
+        margin-bottom: 22px;
+        width: 50%;
+        margin-right: 0 !important;
+    }
+    .el-form-item__content{
+        width: 200px;
+    }
+    .some{
+        .el-input{
+            width: 100px;
+        }
+        .el-checkbox{
+            float: right;
+        }
+    }
+    .el-form-item__label{
+        width: 95px;
+    }
+    .textareaCon{
+        display: block;
+        .el-textarea{
+            height: 180px;
+            textarea{
+                height: 100%;
+            }
+        }
+        .el-form-item__content{
+            width: 78%;
+        }
+    }
+    .creat-btn{
+        display: block;
+        margin: 20px 0 0 100px;
+    }
+}
+.hideHeadCheckbox .has-gutter tr:first-child .el-checkbox{
+    display: none;
+}
+.tinymceId{
+    border: none;
+}
+.halfWidth{
+	width: 50%;
+	float: left;
+}
+.shareList{
+    li{
+        display: inline;
+        border: 1px solid #c3cbd1;
+        padding: 2px 5px;
+        margin-right: 10px;
+        word-break: break-all;
+        white-space: nowrap;
+        cursor: pointer;
+        &:hover{
+            color: #409eff;
+            border: 1px solid #409eff;
+        }
+    }
+}
+.table-loading{
+    .el-loading-text{
+        display: inline;
+    }
+    .el-loading-spinner{
+        margin-top: -6px;
+    }
+    .el-icon-loading{
+        margin-right: 5px;
+    }
+    .el-loading-mask{
+        background-color: rgba(255,255,255,.9) !important;
+    }
+}
+// 渠道
+.channel-choose{
+    ul{
+        display: flex;
+        li{
+            margin-right: 20px;
+            width: 150px;
+            cursor: pointer;
+            &:hover{
+                border:1px solid #409EFF;
+                p>span{
+                    color: #409EFF;
+                }
+            }
+            p{
+                text-align: center;
+            }
+            border: 1px solid #eee;
+            padding: 10px;
+            img{
+                max-height: 50px; 
+            }
+            span{
+                line-height: 22px;
+            }
+            span:last-child{
+                color: #999;
+                font-size: 14px;
+                display: block;
+            }
+        }
+    }
+}
+// 职位
+.tableTextHover{
+    color: #0c7df1;
+    &:hover{
+        color: #409EFF;
+        cursor: pointer;
+    }
+}
+.positionStateT{
+    margin: 20px 0 0 10px;
+    em{
+        color: red;
+    }
+}
+.positionDialog{
+    .el-dialog__body{
+        padding: 10px 20px;
+    }
+}
+.checkbox-wrap-position{
+    width: 500px;
+}
+.divider-main{
+    margin: 30px 0;
+    .el-divider__text{
+        color: #409eff;
+    }
+}
+.form-step{
+    padding-left: 100px;
+    min-width: 400px;
+    max-width: 800px;
+}
+// 阶段设置
+.addDialog-wrap{
+    height: 360px;
+    overflow-y: auto;
+    .el-radio,.el-checkbox{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .radioId{
+        width: 120px;
+        display: inline-block;
+    }
+}
+.testHover{
+    cursor: pointer;
+    &:hover{
+        color: #409eff;
+    }
+}
+.reasonList{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        cursor: pointer;  
+        margin-right: 30px;
+        &:hover{
+            span,em{
+                color: #0461c1;
+            }
+        }
+        em{
+            margin-left: 8px;
+            font-size: 15px;
+            color: #409eff;
+        }
+        span{
+            color: #409eff;
+        }
+    }
+}
+.operate-wrap-list{
+    padding-top: 30px;
+    ul{
+        li{
+            margin-bottom: 20px;
+            >span{
+                width: 150px;
+                display: inline-block;
+            }
+            .operate-textp{
+                display: inline;
+            }
+            .curp{
+                color: red;
+            }
+        }
+    }
+}
+.configure-wrap{
+    ul{
+        width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+        .itemLi{  
+            border: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+        .addConfigure{
+            color: #409eff;
+            cursor: pointer;
+        }
+        .el-collapse-item__header{
+            font-weight: bold; 
+            border:none;
+            padding-left:10px;
+            span{
+                color: #409eff;
+                margin-left: 5px;
+            }
+        }
+        .add{
+            border:1px dashed #409eff; 
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .item{
+            margin-bottom: 10px;
+            >span{
+                font-weight: bold;
+            }
+            p{
+                display: flex;
+                flex-wrap: wrap;
+                span{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .delConfig{
+            float: right;
+            margin-bottom: 10px;
+        }
+        .el-collapse{
+            border: none;
+        }
+        .el-collapse-item__wrap{
+            background-color: #f5f5f5;
+            padding: 10px;
+        }
+        .el-collapse-item:last-child{
+        margin-bottom: 0;
+        }
+        button{
+            
+    display: block;
+    margin-top: 20px;
+    float: right;
+
+        }
+    }
+}
+.set-wrap{
+    display: flex;
+    min-height: 500px;
+    // flex-direction: column;
+    li{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        width: 25%;
+    }
+    .thumb{
+        margin-right: 15px;
+       span{
+            font-size: 30px;
+            color: #409eff;
+        }
+    }
+    .item{
+        p{
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+            font-weight: 700;
+            color: #666;
+            width: 200px;
+            padding: 5px 0;  
+            margin-bottom: 10px; 
+        }
+        a{
+            font-size: 12px;
+            color: #666;
+            margin-right: 8px;
+            &:hover{
+                color: #409eff;
+            }
+        }
+    }
+}
+.el-table .cell{
+    white-space: nowrap;
+}
+.delText{
+    color: red;
+    &:hover{
+        color: rgb(231, 5, 5); 
+    }
+    &:visited{
+        color: red;
+    }
+}
+.approverList{
+    position: relative;
+    margin-bottom: 10px;
+}
+.emailWrap{
+    .content-wrap-mini{
+        margin-left: 110px;
+    margin-bottom: 20px;
+    }
+}
+
+// 系统页面
+.system-wrap{
+    padding: 20px 50px;
+    .logo {
+        display: flex;
+        align-items: center;
+        .logo-blue{
+            height: 36px;
+        }
+        .logoIntro{
+            display: flex;
+            padding-left: 10px;
+        }
+        .logoInfo{
+            padding-left: 5px;
+            p{
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    ul{
+        display: flex;
+        margin: 20px 0;
+        min-height: 600px;
+        background: #fff;
+        box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+        padding: 50px;
+        a{
+            display: flex;
+            width: 400px;
+            padding: 10px;
+            margin-right: 20px;
+            border: 1px solid #fff;
+            .info{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 10px;
+                p{
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #333;
+                    margin-bottom: 5px;
+                }
+                span{
+                    font-size: 12px;
+                    color: #999;
+                    width: 150px;
+                    display: block;
+                }
+            }
+            &:hover{
+                background: rgb(238 238 238 / 20%);
+                border: 1px solid #eee;
+                border-radius: 5px
+            }
+            .rck{
+                background: #05b4ca;
+                padding: 10px;
+                box-shadow: 1px 1px 1px #b8dfe4;
+                border-radius: 5px;
+            }
+            .erp{
+                background: #f12b0b;
+                padding: 10px;
+                box-shadow: 1px 1px 1px #f12b0b;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.singleEmailCon{
+    .el-form-item__label{
+        width: 94px !important;
+    }
+    .emailWrap .content-wrap-mini{
+        margin-left: 96px !important;
+    }
+}
+
+// 首页样式
+.index-wrap{
+    .el-divider__text{
+        color: #409eff;
+    }
+}
+.index-head{
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 40px;
+        width: 90%;
+        li{
+            text-align: center;
+            width: 25%;
+            font-size: 16px;
+            &:last-child{
+                width: 50%;
+            }
+        }
+    }
+}
+.indexSelected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    overflow: hidden;
+    li{
+        text-align: center;
+        width: 25%;
+        font-size: 16px;
+    }
+    p{
+        font-size: 13px;
+        color: #666;
+    }
+    span{
+        color: #409EFF;
+        font-weight: bold;
+        font-size: 28px;
+        display: block;
+        margin: 20px 0 5px 0; 
+    }
+    a{&:hover{
+        p{
+            color: #409EFF !important;
+        }
+    }}
+}
+.index-select{
+    height: 26px;
+    width: 80px;
+    padding: 7px 0;
+    input{
+        height: 26px;
+        line-height: 26px;
+        padding: 0 5px;
+        text-align: center;
+        font-size: 12px;  
+    }
+    .el-input__suffix{
+        top: 7px;
+    } 
+    .is-focus{
+        .el-input__suffix{
+            top: -7px;
+        } 
+    }
+}
+.select-bg{
+    width: 90px;
+    input{
+        background-color: #f4f8fb;
+        border: none;
+    }
+}
+.index-wrap{
+    .el-icon-question{
+        color: rgba(143,156,166,.4);
+        font-size: 16px;
+    }
+}
+.leftTopCol{
+    margin-bottom: 20px;
+}
+.interviewToday{
+    .tit{
+        .el-divider__text{
+            font-size: 18px;
+        }
+    }
+}
+.indexInterview{
+    padding: 20px 40px;
+    height: 500px;
+    overflow-y: scroll;
+    background: #fff;
+    margin-top: 20px;
+    h4{
+        padding-bottom: 10px;
+        a{
+            float: right;
+            color: #666;
+            font-size: 12px;
+        }
+    }
+    p{
+        color: #666;
+        font-size: 12px;
+        line-height: 24px;
+        span{
+            margin-right: 30px;
+        }
+    }
+}
+.noInterview{
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        margin-bottom: 20px;
+    }
+}
+.indexApplicants{
+    margin-top: 20px;
+    height: 675px;
+    overflow-y: scroll;
+    ul{
+        li{
+            padding: 10px;
+            .Interviewers{
+                line-height: 28px;
+                span{
+                    float:right;
+                    font-size: 12px;
+                    color: #fff;
+                    padding: 0 10px;
+                    border-radius: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                }
+                .applicantsSuccess{
+                    background: #38ba72;
+                }
+                .applicantsWarning{
+                    background: #edc407;
+                }
+                .applicantsError{
+                    background: red;
+                }
+            }
+            .interviewerTit{
+                font-size: 12px;
+                color: #999;
+                line-height: 24px;
+            }
+            &:hover{
+                background-color: #eee;
+            }
+        }
+    }
+}
+
+
+// 修改导航栏二级页面导航样式
+.el-menu-item.is-active {
+    border-bottom: 2px solid #409EFF !important;
+    color:#409EFF !important;
+}
+
+// 编辑器样式修改
+body{
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+    }
+.tox-toolbar:nth-child(2){
+    button{
+        background: #eee;
+        margin-right: 10px;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        cursor: pointer;
+        span{
+            cursor: pointer;
+        }
+    }
+    padding: 5px 0 !important;
+    background: none !important;
+    border-bottom: 1px solid #ccc;
+}
+
+
+@media screen and (max-width: 1200px){
+    .form-wrap4 {
+        .el-form-item{
+            width: 33%;
+        }
+        .textareaCon{
+            display: block;
+            width: 100%;
+        }
+    }
+}

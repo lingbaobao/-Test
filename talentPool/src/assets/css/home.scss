@@ -1,0 +1,68 @@
+.admin-wrap{
+	height: 100%;
+}
+
+.topDiv{
+	height: 60px;
+	width: 100%;
+	background-color:#fff;
+	box-shadow: 0 0 5px rgba(0,0,0,.18);
+	li:hover{
+		background-color: #fff !important;
+		color: #1694c8 !important;
+	}
+	.logoImg{
+		height: 30px;
+		float: left;
+		margin:15px 40px;
+	}
+	.navBox{
+		float: left;
+	}
+	.el-submenu__title i {
+	    color: #fff;
+	}
+	.el-menu-item{
+		padding: 0 30px;
+	}
+	.topRight{
+		float: right;
+		margin-right: 40px;
+	}
+	.rightBox {
+	  padding-right: 50px;
+	  display: flex;
+	  align-items: center; 
+		margin-top: 15px;
+	}
+	.rightBox .userImg {
+	    width: 30px;
+	    height: 30px;
+	    border-radius: 100%;
+	    margin-right: 10px;
+	    cursor: pointer; 
+	}
+	.rightBox .userName {
+	    font-size: 14px;
+	    color: #666;
+	    cursor: pointer; 
+	}
+	.rightBox .noticeIcon {
+	    margin-right: 40px;
+	    cursor: pointer;
+	    position: relative; 
+	}
+	.rightBox .el-icon-bell {
+	    font-size: 20px; 
+	}
+	.rightBox .el-badge__content.is-fixed {
+	    right: 2px; 
+	}
+	.el-dropdown {
+		color: #fff;
+	}
+	.el-icon--right{
+		color: #333;
+	}
+	
+}
